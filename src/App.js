@@ -5,6 +5,7 @@ import {
 	Navigate,
 	Outlet,
 } from "react-router-dom";
+import { Box } from "@mui/material";
 
 import "./App.css";
 import { Header, Footer } from "components";
@@ -14,7 +15,9 @@ const RouteWithHAF = () => {
 	return (
 		<>
 			<Header />
-			<Outlet />
+			<Box sx={{ marginTop: "4rem" }}>
+				<Outlet />
+			</Box>
 			<Footer />
 		</>
 	);
