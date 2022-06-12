@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
 	return (
-		<AppBar position="fixed" sx={{ background: "inherit", height: "4rem" }}>
+		<AppBar position="fixed" sx={{ background: "#14141f", height: "4rem" }}>
 			<Container>
 				<Box
 					sx={{
