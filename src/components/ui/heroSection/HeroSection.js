@@ -89,7 +89,7 @@ const HeroSection = () => {
 				</Grid>
 
 				<Grid item sm={6}>
-					<Box sx={{ padding: "1rem" }}>
+					<Box>
 						<img src={heroImg} alt="hero section" style={{ width: "100%" }} />
 					</Box>
 				</Grid>
