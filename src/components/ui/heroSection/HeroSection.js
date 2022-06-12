@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Container, Grid, Typography, Button, Stack, Box } from "@mui/material";
 import { RiRocketLine, RiBallPenLine } from "react-icons/ri";
 
+import heroImg from "assets/images/hero.jpg";
+
 const Buttons = [
 	{
 		id: 1,
@@ -21,10 +23,10 @@ const Buttons = [
 const HeroSection = () => {
 	return (
 		<Container>
-			<Grid container>
+			<Grid container sx={{ padding: "1rem 0rem" }}>
 				<Grid item sm={6}>
 					<Stack spacing={3}>
-						<Typography variant="h4">
+						<Typography variant="h4" sx={{ fontWeight: "600" }}>
 							Discover rare digital art and collect{" "}
 							<Typography
 								variant="p"
@@ -84,6 +86,12 @@ const HeroSection = () => {
 							))}
 						</Stack>
 					</Stack>
+				</Grid>
+
+				<Grid item sm={6}>
+					<Box sx={{ padding: "1rem" }}>
+						<img src={heroImg} alt="hero section" style={{ width: "100%" }} />
+					</Box>
 				</Grid>
 			</Grid>
 		</Container>
