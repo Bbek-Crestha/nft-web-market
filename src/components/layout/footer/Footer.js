@@ -57,8 +57,8 @@ const Footer = () => {
 						</Typography>
 					</Grid>
 
-					{FooterLists.map((list) => (
-						<Grid item sm={2}>
+					{FooterLists.map((list, index) => (
+						<Grid item sm={2} key={index}>
 							<Typography variant="h6">{list.name}</Typography>
 							<List>
 								{list.array.map((item) => (
